@@ -1,0 +1,29 @@
+{
+  "author": {
+    "email": "briankchristensen@gmail.com",
+    "name": "Brian Kejlberg",
+    "url": "https://github.com/thetrompf"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "prettier": "^2.1.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "tslib": "^2.0.1"
+  },
+  "peerDependencies": {
+    "tslib": "^2.0.1"
+  },
+  "license": "BSD-3-Clause",
+  "readme": "README.md",
+  "name": "@zeroconf/generators",
+  "private": true,
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "test": "jest",
+    "install": "mkdir -p ./node_modules/@zeroconf && ln -sfn ../../src ./node_modules/@zeroconf/generators",
+    "prepublishOnly": "yarn build && yarn test"
+  },
+  "types": "index.d.ts",
+  "version": "0.0.1"
+}
