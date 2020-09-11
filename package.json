@@ -16,6 +16,11 @@
   },
   "license": "BSD-3-Clause",
   "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeroconf-dev/generators.git",
+    "directory": "package"
+  },
   "name": "@zeroconf/generators",
   "private": true,
   "scripts": {

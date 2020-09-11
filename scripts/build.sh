@@ -25,7 +25,7 @@ copyStatic() {
 		cp "$src" "$target"
 	done
 	cp "$DIR/LICENSE" "$DIR/package/LICENSE"
-	jq 'del(.devDependencies,.private,.scripts)' "$DIR/package.json" > "$DIR/package/package.json"
+	jq 'del(.devDependencies,.private,.scripts,.readme,.repository.directory)' "$DIR/package.json" > "$DIR/package/package.json"
 }
 
 clean
